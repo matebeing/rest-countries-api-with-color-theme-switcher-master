@@ -1,14 +1,19 @@
+import styled from 'styled-components';
+import './style/App.css'
+
 
 function App() {
   return (
     <div className="App">
       <header>
-        <b>Where in the world?</b>
-        <button>Dark mode</button>
+        <nav>
+          <b>Where in the world?</b>
+          <button>Dark mode</button>
+        </nav>
       </header>
       <main>
         <div className="searchContainer">
-          <input type='text'></input>
+          <input placeholder='Search for a country...' type='text'></input>
           <select>
             <option>Filter by Region</option>
             <option>Africa</option>
