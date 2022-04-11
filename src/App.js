@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <b>Where in the world?</b>
+        <button>Dark mode</button>
       </header>
+      <main>
+        <div className="searchContainer">
+          <input type='text'></input>
+          <select>
+            <option>Filter by Region</option>
+            <option>Africa</option>
+            <option>America</option>
+            <option>Asia</option>
+            <option>Europe</option>
+            <option>Oceania</option>
+          </select>
+        </div>
+        <div className="countriesContainer">
+        </div>
+      </main>
     </div>
   );
 }
